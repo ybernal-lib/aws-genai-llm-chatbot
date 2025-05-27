@@ -25,7 +25,7 @@ jobs:
           npm run test
           npx cdk synth
       - name: PyTests
-        # Suppression of pip audit failure until langchain is upgraded.
+        # Suppression of pip audit failure until langchain is upgraded changes.
         run: |
           pip install -r pytest_requirements.txt
           flake8 .
